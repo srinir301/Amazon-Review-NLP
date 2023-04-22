@@ -33,7 +33,7 @@ I started out by dropping the null values which were in the review body, review 
 
 ## Preparation
 
-To prepare my data for modeling I had to first use word tokenization to split up the sentences into words, then I lowercased all the words so that I can get rid of the stopwords in the my dataset and the make modleing less complex. I got rid of all the stop words to decrease the complexity of my models and I used Porter Stemmer to make the same type of words as one. Stemming decrease the complexity and I used it compared to other stemmers because it takes into account shorter words and it is a faster process. I decided not to use lemmatization because it would have taken longer to process, but it could have been more effective. Lastly I used TFIDF Vectorizer to take into account the importance of certain words and not just the count like using the Count Vectorizer.
+To prepare my data for modeling, I had to first use word tokenization to split up the sentences into words, then I lowercased all the words so that I can get rid of the stopwords in the my dataset and the make modeling less complex. I got rid of all the stop words to decrease the complexity of my models and I used Porter Stemmer to make the same type of words as one. Stemming decreases the complexity and I used it instead of other stemmers because it takes into account shorter words and it is a faster process. I decided not to use lemmatization because it would have taken longer to process, but it could have been more effective. Lastly I used TFIDF Vectorizer to take into account the importance of certain words and not just the count like using the Count Vectorizer.
 
 **Class Imbalance**
 
@@ -77,4 +77,4 @@ I ended up using the base logistic regression model which gave a precision score
 
 2. I want to try using a larger dataset to predict to see if my model is accurate and I would try including other types of products to not only predict on but to look at which products get the worst and best reviews
 
-3. I would try to imporve the precision of the negative and neutral reviews by either using other models, different hyperparamters, or different preprocessing techniques
+3. I would try to improve the precision of the negative and neutral reviews by either using other models, different hyperparameters, or different preprocessing techniques
